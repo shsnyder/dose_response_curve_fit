@@ -1,5 +1,5 @@
 # Skewnormal Curve fitting
-Set of routines to fit dose-response data to a skewnormal curve.
+Set of routines to fit dose-response data to a skewnormal CDF (cummulative distribution functio0n) curve.
 The resultant curve fit produces three parameters:
 - *a*:      a measure of distribution skew.
     - a negaive value of **a** will have the distribution skewing to the left
@@ -21,8 +21,8 @@ This calling module
 
 For each molecule:
 - the log10 of the response data is taken, scaled between zero and one and then the curve fittling routine is called.  
-- if the curve fit is successful the dose response data is plotted, along with the skewnrmal curve fit and the Hill equation using paraaeters provided in the data file; this file is saved.
-    - for the comparison plot the fitted curves (skewnormal and Hill) are reverse scaled so that they can be compared to the unprocessed dose response data.
+- if the curve fit is successful the dose response data is plotted, along with the curve fit to the skewnormal CDF and the Hill equation using paraaeters provided in the data file; this file is saved.
+    - for the comparison plot the fitted curves (skewnormal CDF and Hill) are reverse scaled so that they can be compared to the unprocessed dose response data.
 - all of the extracted information about each molecule, as well as the skewnormal and Hill equation parameters, are put into a dictionary that is exposrted to a JSON file.
 
 
