@@ -7,8 +7,8 @@ The resultant curve fit produces three parameters:
 - *loc*:    parameter specifying the **center** of the distribution (x axis)
 - *scale*:  parameter specifying the **spread** of the distribution (x axis)
 
-<img src="sample_skewnormal_plots/sn_pd_all_a.png" alt="Skewnormal PDF" width="400"/>
-<img src="sample_skewnormal_plots/sn_cd_all_a.png" alt="Skewnormal PDF" width="400"/>
+<img src="sample_skewnormal_plots/sn_pd_all_a.png" alt="Skewnormal PDF" width="600"/>
+<img src="sample_skewnormal_plots/sn_cd_all_a.png" alt="Skewnormal PDF" width="600"/>
 <!-- ![Skewnormal PDF 'a' variest](sample_skewnormal_plots/sn_pd_all_a.png )
 ![Skewnormal CDF 'a' varies](sample_skewnormal_plots/sn_cd_all_a.png) -->
 
