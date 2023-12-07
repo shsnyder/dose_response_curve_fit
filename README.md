@@ -3,7 +3,7 @@ Set of routines to fit dose-response data to a skewnormal CDF (cummulative distr
 The resultant curve fit produces three parameters:
 - *a*:      a measure of distribution skew.
     - a negaive value of **a** will have the distribution skewing to the left
-    - a positive value of **a** will have the distribution skewing to the right 
+    - a positive va∏lue of **a** will have the distribution skewing to the right 
 - *loc*:    parameter specifying the **center** of the distribution (x axis)
 - *scale*:  parameter specifying the **spread** of the distribution (x axis)
 
@@ -55,4 +55,4 @@ For each molecule:
 - Plot sample skewnormal curves for documentation purposes
 
 **summarize_hill_vs_sn.py**
-- A module that traverses a given directory tree looking for exported JSON files (from previous proessing of dose response data) and builds a Dataframe that is used to compare the median values from Hill equation and skewnormal curve fit (AC50 and median_sn) and exports it to a CSV file.
+- A module that traverses a given directory tree looking for exported JSON files (from previous processing of dose response data) and builds a Dataframe that is used to compare the median values from Hill equation and skewnormal curve fit (AC50 and median_sn) and exports it to a CSV file.

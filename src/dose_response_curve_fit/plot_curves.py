@@ -10,6 +10,16 @@ from dose_response_curve_fit import data_processing
 
 # Plotting functions
 def plot_skewnorm(x, y, a, loc, scale, plot_file=None):
+    """_summary_
+
+    Args:
+        x (_type_): _description_
+        y (_type_): _description_
+        a (_type_): _description_
+        loc (_type_): _description_
+        scale (_type_): _description_
+        plot_file (_type_, optional): _description_. Defaults to None.
+    """
     # Plot original data
 
     x1 = np.linspace(
@@ -36,8 +46,16 @@ def plot_skewnorm(x, y, a, loc, scale, plot_file=None):
 
 
 def plot_skewnorm_curve_fit(x, y, a, loc, scale, plot_file=None):
-    # y_res = restore_response(y, start, range)
+    """_summary_
 
+    Args:
+        x (_type_): _description_
+        y (_type_): _description_
+        a (_type_): _description_
+        loc (_type_): _description_
+        scale (_type_): _description_
+        plot_file (_type_, optional): _description_. Defaults to None.
+    """
     # Plot original data
     dose_response = pd.DataFrame({"Dose": np.power(10, x), "Response": y})
     ax = sns.scatterplot(
@@ -88,6 +106,12 @@ def plot_skewnorm_curve_fit(x, y, a, loc, scale, plot_file=None):
 
 
 def plot_hill_eqn(hill_coef, ac50):
+    """_summary_
+
+    Args:
+        hill_coef (_type_): _description_
+        ac50 (_type_): _description_
+    """
     fit_eqn_limit_lower = 0.01
     fit_eqn_limit_upper = 0.9
 
@@ -117,6 +141,18 @@ def plot_hill_eqn(hill_coef, ac50):
 
 
 def plot_skewnorm_hill(x, y, a, loc, scale, hill_coef, ac50, plot_file=None):
+    """_summary_
+
+    Args:
+        x (_type_): _description_
+        y (_type_): _description_
+        a (_type_): _description_
+        loc (_type_): _description_
+        scale (_type_): _description_
+        hill_coef (_type_): _description_
+        ac50 (_type_): _description_
+        plot_file (_type_, optional): _description_. Defaults to None.
+    """
     # Plot original data
     dose_response = pd.DataFrame({"Dose": np.power(10, x), "Response": y})
     ax = sns.scatterplot(
