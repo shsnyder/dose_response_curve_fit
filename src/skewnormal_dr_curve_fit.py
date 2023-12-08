@@ -166,7 +166,7 @@ if __name__ == "__main__":
     # # #####################
 
     #  Tox21 data
-    data_file = "/Users/shsnyder/Documents/projects/dose_response_data/tox21-ache-p5_curve_fit_lt_3_hill_log/tox21-ache-p5.tsv"
+    data_file = "/Users/shsnyder/Documents/projects/dose_response_data/tox21-ache-p4_curve_fit_lt_3_hill_log/tox21-ache-p4.tsv"
 
     dr_filtered, dose_cols, response_cols = read_tox21_data(
         data_file, curve_class_limit=3
