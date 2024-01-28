@@ -73,9 +73,9 @@ def create_summary(data_folder):
 
 
 if __name__ == "__main__":
-    data_folder = "/Users/shsnyder/Documents/projects/dose_response_data/tox21-ache-p5_curve_fit_lt_3_hill_log"
+    data_folder = "/Users/shsnyder/Documents/projects/dose_response_data/tox21-ache-p4_curve_fit_lt_3_hill_log"
     summary_output_file = (
-        f"{data_folder}/summary_tox21-ache-p5_curve_fit_lt_3_hill_log.csv"
+        f"{data_folder}/summary_tox21-ache-p4_curve_fit_lt_3_hill_log.csv"
     )
     # output_file = "/Users/shsnyder/Documents/projects/dose_response_data/tox21-ache-p5_curve_fit_all_hill_log/tox21-ache-p5_curve_fit_all_hill_log.csv"
 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     summary_df.to_csv(summary_output_file, sep=",", encoding="utf-8")
 
     # ############ Update the original data file with skewnormal AC50
-    original_data_file_no_path = "tox21-ache-p5.tsv"
+    original_data_file_no_path = "tox21-ache-p4.tsv"
     original_data_file = f"{data_folder}/{original_data_file_no_path}"
     updated_data_file = f"{data_folder}/updated_{original_data_file_no_path}.csv"
 

@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def retrieve_data_metrics(row, response_cols, dose_cols, logdose=True):
+def retrieve_data_metrics(row, response_cols, dose_cols, other_col_dict, logdose=True):
     """_summary_
 
     Args:
@@ -17,10 +17,10 @@ def retrieve_data_metrics(row, response_cols, dose_cols, logdose=True):
     dose = list(row[dose_cols])
     if logdose:
         dose = list(np.log10(list(dose)))
-    median = row.get("AC50", None)
-    sample_name = row["SAMPLE_NAME"]
-    smiles = row["SMILES"]
-    hill_coef = row.get("HILL_COEF", None)
+    median = row.get(other_col_dict["ac50"], None)
+    sample_name = row.get(other_col_dict["name"], "")
+    smiles = row[other_col_dict["smiles"]]
+    hill_coef = row.get(other_col_dict["hill_coef"], None)
     return response, dose, median, sample_name, smiles, hill_coef
 
 
