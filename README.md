@@ -14,7 +14,7 @@ The resultant curve fit produces three parameters:
 Processing of data is in file **skewnormal_dr_curve_fit.py**.  
 It is not part of the library itself but retrieves data and calls the library functions.
 This calling module
-- reads a file from Tox21 dataset and iterates through each molecule endpoint, extracting molecule identificatikon information, dose and response data as well as Hill equation parameters, Hill coefficient and AC50.   
+- reads a file (either Tox21 or PubCHem dataset) and iterates through each molecule endpoint, extracting molecule identificatikon information, dose and response data as well as Hill equation parameters, Hill coefficient and AC50.   
 
 For each molecule:
 - the log10 of the response data is taken, scaled between zero and one and then the curve fittling routine is called.  
@@ -47,9 +47,9 @@ For each molecule:
 - `plot_hill_eqn`
 - `plot_skewnorm_hill`
 
-### Additional modules
+<!-- ### Additional modules
 **plot_skewnormal.py**
 - Plot sample skewnormal curves for documentation purposes
 
 **summarize_hill_vs_sn.py**
-- A module that traverses a given directory tree looking for exported JSON files (from previous processing of dose response data) and builds a Dataframe that is used to compare the median values from Hill equation and skewnormal curve fit (AC50 and median_sn) and exports it to a CSV file.
+- A module that traverses a given directory tree looking for exported JSON files (from previous processing of dose response data) and builds a Dataframe that is used to compare the median values from Hill equation and skewnormal curve fit (AC50 and median_sn) and exports it to a CSV file. -->
