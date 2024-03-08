@@ -9,9 +9,6 @@ The resultant curve fit produces three parameters:
 
 <img src="sample_skewnormal_plots/sn_pd_all_a.png" alt="Skewnormal PDF" width="600"/>
 <img src="sample_skewnormal_plots/sn_cd_all_a.png" alt="Skewnormal PDF" width="600"/>
-<!-- ![Skewnormal PDF 'a' variest](sample_skewnormal_plots/sn_pd_all_a.png )
-![Skewnormal CDF 'a' varies](sample_skewnormal_plots/sn_cd_all_a.png) -->
-
 
 ## Processing of datasets
 Processing of data is in file **skewnormal_dr_curve_fit.py**.  

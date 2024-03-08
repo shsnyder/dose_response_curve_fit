@@ -3,4 +3,8 @@ __pycache__/
 .ipynb_checkpoints 
 .DS_Store
 temp.py
+MegaModels/
+build_models.py
+eClean_file.py
+model.json
 
