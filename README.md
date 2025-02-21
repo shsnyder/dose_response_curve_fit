@@ -3,7 +3,7 @@ Set of routines to fit dose-response data to a skewnormal CDF (cummulative distr
 The resultant curve fit produces three parameters:
 - *a*:      a measure of distribution skew.
     - a negaive value of **a** will have the distribution skewing to the left
-    - a positive va∏lue of **a** will have the distribution skewing to the right 
+    - a positive value of **a** will have the distribution skewing to the right 
 - *loc*:    parameter specifying the **center** of the distribution (x axis)
 - *scale*:  parameter specifying the **spread** of the distribution (x axis)
 
