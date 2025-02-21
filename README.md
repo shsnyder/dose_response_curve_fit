@@ -1,5 +1,5 @@
 # Skewnormal Curve fitting
-Set of routines to fit dose-response data to a skewnormal CDF (cummulative distribution functio0n) curve.
+Set of routines to fit dose-response data to a skewnormal CDF (cummulative distribution function) curve.
 The resultant curve fit produces three parameters:
 - *a*:      a measure of distribution skew.
     - a negaive value of **a** will have the distribution skewing to the left
