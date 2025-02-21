@@ -21,7 +21,7 @@ def func_skewnorm_cdf(x, a, loc, scale):
     return skewnorm.cdf(x, a, loc, scale)
 
 
-def find_skewnorm_curve_parameters(func, x, y):
+def _find_skewnorm_curve_parameters(func, x, y):
     """_summary_
 
     Args:
@@ -67,7 +67,7 @@ def analyze_dose_response(dose, response):
     trans_response, start, range = data_processing.scale_response(response)
 
     # Curve fit
-    a, loc, scale, ier, mesg = find_skewnorm_curve_parameters(
+    a, loc, scale, ier, mesg = _find_skewnorm_curve_parameters(
         func_skewnorm_cdf, dose, trans_response
     )
     print(f"Fit message: {mesg}")
@@ -95,7 +95,7 @@ def successful_skewnorm_curvefit(a, loc, scale, ier):
         # Curve fit failed to fit but returned false return code
         # (a, loc, scale) == (0, 0, 0) is for a caught exception
         # (a, loc, scale) == (1, 1, 1) is what the curve_fit function returns when the
-        #                              data transition is to drastic to fit
+        #                              data transition is too drastic to fit
         failed_curve_fit = ((a, loc, scale) == (0, 0, 0)) or (
             (a, loc, scale) == (1, 1, 1)
         )

@@ -14,7 +14,7 @@ The resultant curve fit produces three parameters:
 Processing of data is in file **skewnormal_dr_curve_fit.py**.  
 It is not part of the library itself but retrieves data and calls the library functions.
 This calling module
-- reads a file (either Tox21 or PubCHem dataset) and iterates through each molecule endpoint, extracting molecule identificatikon information, dose and response data as well as Hill equation parameters, Hill coefficient and AC50.   
+- reads a file (either Tox21 or PubCHem dataset) and iterates through each molecule endpoint, extracting molecule identification information, dose and response data as well as Hill equation parameters, Hill coefficient and AC50.   
 
 For each molecule:
 - the log10 of the response data is taken, scaled between zero and one and then the curve fittling routine is called.  
